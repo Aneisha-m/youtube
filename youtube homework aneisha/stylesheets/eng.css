@@ -1,0 +1,191 @@
+a{
+  text-decoration: none;
+}
+
+body, html{
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  font-size:16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+#nav{
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  background-color: #282e34;
+}
+
+#nav li{
+  list-style: none;
+  display: inline-block;
+}
+
+#nav li a{
+  position: relative;
+  color: white;
+  font-size: 18px;
+  font-weight: 60;
+  font-family: sans-serif;
+  display: block;
+  overflow: hidden;
+  transition: 0.7s all;
+  padding: 15px 40px;
+  text-transform: uppercase;
+}
+
+#nav li a:before{
+  content:'';
+  width: 50px;
+  position: absolute;
+  border-bottom: 5px solid orange;
+  bottom: 0;
+  right: 350px;
+  transition: 0.7s all;
+}
+
+#nav li a:hover:before{
+  right: 0;
+}
+
+.container .click-logo{
+  background-image: url(images/pressplay.png);
+  padding:0;
+  margin: 0;
+  height: 80px;
+  width: 140px;
+  position: absolute;
+}
+
+.pimg1,
+.pimg2,
+.pimg3{
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pimg1{
+  background-image:url('../images/tech.jpg');
+  min-height: 100%;
+}
+
+
+.pimg3{
+  background-image:url('../images/cover.jpg');
+  min-height: 400px;
+}
+
+.section{
+  text-align:center;
+  padding: 50px 50px;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border{
+  background-color: #111;
+  color: white;
+  padding: 20px;
+}
+
+.logo{
+  opacity: 0;
+  top:10%;
+  width: 10%;
+  position: absolute;
+}
+
+.s-m{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.s-m a{
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  background:#282e34
+  color: purple;
+  margin: 0 6px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  font-size: 40px;
+}
+
+.s-m a:hover{
+  background: pink;
+}
+
+.s-m a i{
+  transition: 0.4s all;
+}
+
+.s-m a:hover > i{
+  transform: scale(1.6) rotate(-35deg);
+}
+
+.footer{
+  background-color: #282e34;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.footer span{
+  word-spacing: 10px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container-1,
+.container-2{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #666;
+}
+
+.container-1 > div, .container-2 > div{
+  padding: 15px 10px 0;
+}
+
+p{
+  text-align: justify;
+}
+
+h2,
+h4{
+  color: lightblue;
+}
